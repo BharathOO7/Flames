@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 180vh;
+    background: linear-gradient(90deg, #FF2361, rgba(234, 73, 165, 1));
+}
+
+.backGround {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 50%;
+    animation: pulse 1.2s linear 0s infinite normal forwards;
+    z-index: -1;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+
+    25% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.2);
+    }
+
+    75% {
+        opacity: 0.4;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+}
+
+.heading {
+    font-family: 'Sofia', cursive;
+    color: #9a0231;
+    text-align: center;
+    font-size: 70px;
+}
+
+.smallFooterHeart {
+    height: 30px;
+}
+
+.miniHeading {
+    font-family: 'Sofia', cursive;
+    color: #9a0231;
+    text-align: center;
+    font-size: 30px;
+}
+
+.smallHeart {
+    height: 70px;
+}
+
+
+.coupleSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+}
+
+
+.coupleInput {
+    align-self: center;
+    justify-self: center;
+    height: 60px;
+    background: none;
+    border: 2px solid #BF0E52;
+    color: #9a0231;
+    border-radius: 50px;
+    font-family: 'Sofia', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 80%;
+    outline: none;
+}
+
+.coupleInput::placeholder {
+    color: #9a0231;
+}
+
+.btn {
+    width: 40%;
+    grid-area: 2/1/3/3;
+    color: rgba(154, 2, 49, 0.9);
+}
+
+.btn:hover {
+    background-color: rgba(191, 14, 82, 0.4);
+}
+
+@media (max-width: 740px) {
+    .heading {
+        font-size: 50px;
+    }
+
+    .miniHeading {
+        font-size: 25px;
+    }
+
+    .smallHeart {
+        height: 50px;
+    }
+
+    .coupleInput {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 530px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .miniHeading {
+        font-size: 20px;
+    }
+
+    .smallHeart {
+        height: 40px;
+    }
+
+    .coupleSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .backGround {
+        height: 35%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    body {
+        height: 150vh;
+    }
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
